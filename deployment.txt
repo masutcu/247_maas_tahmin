@@ -1,0 +1,28 @@
+GitHUB 
+projemiz github a yüklenir. Şu şekilde;
+github da env dosyası olmamalı.
+toptal.com adresi bize flask için örnek bir git ignore dosyası oluşturuyor.biz de buradan aldık.
+klasörümüz içinde terminal açarak  git init, git add ., git commit -m "v1", yapılır. 
+git hub da uygun bir repo açılır ve onunla bağlantı sağlanarak klasörümüz git hub a yüklenir.
+
+DEPLOYMENT WİTH RENDER.COM
+daha sonra
+render.com sitesine girilir. free olarak başlatılabilir.üye olunabilir.
+Dashboard alanında Web Servise altında new web servise seçilir. 
+eğer daha önce github configure ayarları yapılmamışsa Credentials altında 
+Configure Github seçilir. Burada githup senkrenizasyonu yapıldıktan sonra ilgili proje reposu seçilir.
+configure sayfasında isim kısmına uygun bir isim girilir. türkçe karakter olmasın. 
+burada girilen isim mesela 'maas tahmin uygulamasi' ise site ismi https://maas-tahmin-uygulamisi.onrender.com şeklinde çıkacaktır. 
+diğer ayarlar ayarlı gelmiş olmalı. language python 3, branch main, region oregon(us west) gibi.
+buradaki ayarlara dokunmaya gerek yok.
+Build Command alanı: $ pip install -r requirements.txt     olmalı. 
+Start command alanı: $ gunicorn app:app     olmalı.
+Instance Type bölümünde for hobby project - free alanını seçeceğiz. ücretsiz 3 aylık bir alan sağlıyor. 
+sonra diğer alanlara dokunmadan Depley Web Servise tıklanarak deployment tamamlanır. 
+
+
+
+
+
+
+
